@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Infix to Prefix and Postfix Converter</title>
+
+<style>
+    body {
+        
+        background-image: url("lyly.jpg");
+        background-position:center;
+        text-align: center;
+        font-family: cursive;
+        color: white;
+       
+    }
+  
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    .centerAlign {
+        text-align: center;
+    }
+    #homepage {
+        
+        animation: fadeIn 2s ease-in-out forwards;
+    }
+
+
+  
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    
+</style>
+</head>
+<body>
+  
+    <div id="homepage">
+        <h1>Hi I'm Elysha</h1>
+        
+        <p> I'm a grade 9 student in RTPM-DSHS, and I am trying to learn how to code. </p>
+       
+        <h3> Select a Button</h3>
+        <button onclick="convertPrefixConverter()">About Me</button>
+        <button onclick="convertPostfixConverter()">Personal Information</button>
+        
+      </div>
+      
+      <div id="homepage1">
+        <h1>About Me</h1>
+        
+        <p> I am Jorin Elysha Lorraine D. Teves of Grade 9-Air, usually called ely, and this is a personal portofolio about me.
+        <br> I am passionate about many things and I find joy in the experiences that I share with the people around me.
+        <br> Pretty much, I am the most basic yet loud mouthed teenager you would meet; Introverted, soft-spoken, yet laughs at a lot of things. 
+        <br> What makes me stand out most is that, I am an all-rounder, who not only speaks but shows it through actions.
+        <br> Most of my passion, shows through my works, and I enjoy creating things that someday I will look at and laugh at on my death bed.
+        </p>
+        <br>
+  
+        <button style="text-align: left" onclick="navigateToHomepage()">Homepage</button>
+        
+      </div>
+
+      <div id="homepage2">
+        <h1>Personal Information</h1>
+        
+        <p> Hobbies: Any art related activities, reading, watching films, cooking, playing video games.</p>
+        <br> 
+        <p>Interests: Biology and Chemistry related stuff, history, art, films, theatre. </p>
+        <br>
+        <p>Music Taste: Indie Rock, Pop, Jazz.</p>
+        <br>
+        <p>Skills: Visual skills, First-Aid, Managing tasks.</p>
+        <br>
+        
+        <button style="text-align: left" onclick="navigateToHomepage()">Homepage</button>
+      </div>
+
+      
+    
+
+   
+<script>
+document.getElementById("homepage1").style.display="none"
+    document.getElementById("homepage2").style.display="none";
+ const i=0;
+  var choice=0;
+function convertPrefixConverter() {
+   
+  
+    choice=1;
+
+    document.getElementById("homepage").style.display="none";
+    document.getElementById("homepage1").style.display="block"
+    document.getElementById("homepage2").style.display="none";
+    
+    
+   
+    
+}
+
+function convertPostfixConverter() {
+    choice =2;
+    document.getElementById("homepage").style.display="none";
+    document.getElementById("homepage1").style.display="none";
+    document.getElementById("homepage2").style.display="block";
+    
+    
+   
+}
+
+
+
+function navigateToHomepage(){
+    document.getElementById("homepage").style.display="block";
+    document.getElementById("homepage1").style.display="none"
+    document.getElementById("homepage2").style.display="none";
+    
+    
+   
+    choice=0;
+    
+}
+
+
+function toggleTable() {
+    var table = document.getElementById("stepTableConverter");
+    if (table.style.display === "none") {
+        table.style.display = "table";
+       
+   
+    }
+}
+
+
+
+
+    
+</script>
+</body>
+</html>
